@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    </script>
+    <script src="script.js"></script>
+    <title>Página de Login</title>
+</head>
+
+<body>
+    <div class="conteudo">
+        <div class="mensagem">
+            <h1>Faça seu Login <br> E volte a treinar!</h1>
+            <img src="Captura de tela de 2022-12-09 12-12-11-PhotoRoom.png" class="imagem" alt="Drone">
+        </div>
+        <div class="login">
+            <div class="card-login">
+                <h1>LOGIN</h1>
+                <div class="textfield">
+                    <label for="usuario">Usuário</label>
+                    <input type="text" name="usuario" placeholder="Usuário" id="login">
+                </div>
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" placeholder="Senha" id="senha">
+                </div>
+                <button class="button" onclick="logar()">Login</button>
+                <p>Ainda não tem uma conta? <a href="cadastro.html" target="_blank" class="criar-conta">Criar conta</a></p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance: '30px',
+            duration: 2000,
+            delay: 400
+        });
+
+        ScrollReveal().reveal('.mensagem  h1', { delay: 400, origin: 'left' });
+        ScrollReveal().reveal('img', { delay: 400, origin: 'right' });
+        ScrollReveal().reveal('.card-login', { delay: 400, origin: 'top' });
+    </script>
+
+</body>
+
+</html>
